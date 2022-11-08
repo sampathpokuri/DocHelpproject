@@ -1,9 +1,8 @@
-.prb{
-    text-align:left;
-}
-.heading{
-    text-align: left;
-}
-.sym{
-    text-align: left;
-}
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlEuT_9bEFmMXLejKAgxIXxiJXWL_x1_v9_g&usqp=CAU); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

@@ -5,14 +5,19 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PatserveService {
-
-  constructor(private httpclient: HttpClient) { }
+  isUserLogged:boolean;
+  constructor(private httpclient: HttpClient) { 
+    this.isUserLogged=false;
+  }
   getAllcustomers(){
     return this.httpclient.get('getAllcustomers');
   }
   
   getcustomerbyid(customer: any){
-    return this.httpclient.get('getcustomer'+customer.docid);
+    return this.httpclient.get('getcustomer/'+customer);
+  }
+  getcustomerbyemail(email: any,password: any){
+    return this.httpclient.get('getcustomerbyemail/'+email+'/'+password);
   }
 
 
@@ -25,5 +30,18 @@ export class PatserveService {
   } 
   deletecustomer(customer: any) {
     return this.httpclient.delete('deletecustomerbyid/' + customer.typeid);
-  }
+  }
+
+  setUserLoggedIn(){
+    this.isUserLogged=true;
+  }
+  setUserLoggedout(){
+    this.isUserLogged=false;
+  }
+  getUserLogged(){
+    return this.isUserLogged;
+  }
+  senddocid(docid: any): any {
+    return this.httpclient.put('getdocid/',docid);
+  } 
 }

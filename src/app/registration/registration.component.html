@@ -1,38 +1,4 @@
-
-
-<!-- <marquee>welcome to DoctorConsultancy</marquee>
-<div class="container">
- <form >
-    <input type="number"   name="salary"   ngModel #salary=ngModel  required min="10000"/>
-    Enter Name:<input type="text"  name="name" class="form-control"><br />
-    Enter Address:<input type="text" ngModel name="address" class="form-control"><br />
-    Enter E-mail:<input type="text" ngModel name="email" class="form-control"><br />
-    Enter Age:<input type="text" ngModel name="age" class="form-control"><br />
-    Enter Gender:<input type="radio" ngModel name="gender" class="form-control"><br />
-    Enter MobileNumber:<input type="text" ngModel name="mobilenumber" class="form-control"><br />
-    Enter Description:<input type="text" ngModel name="description" class="form-control"><br />
-    
-    <button class="btn btn-danger">Register</button>
-</form>
-</div> -->
-
-
-<!-- <marquee>Welcome to DOCHELP</marquee>
-<div class="container">
-    
- <form align ="center">
-    Enter Id:<input type="text" ngModel name="customerId" class="form-control"><br />
-    Enter Name:<input type="text" ngModel name="fname" class="form-control"><br />
-    Enter Address:<input type="text" ngModel name="address" class="form-control"><br />
-    Enter E-mail:<input type="text" ngModel name="email" class="form-control"><br />
-    Enter Age:<input type="text" ngModel name="age" class="form-control"><br />
-    Enter Gender:<input type="text" ngModel name="gender" class="form-control"><br />
-    Enter MobileNumber:<input type="text" ngModel name="mobilenumber" class="form-control"><br />
-    Enter Description:<input type="text" ngModel name="description" class="form-control"><br />
-    
-    <button >Register</button>
-</form>
-</div> -->
+<!-- 
 
 
 <!DOCTYPE html>
@@ -46,21 +12,7 @@
     <title>Login Page</title>
 
     <style>
-        /* table
-
-      {
-
-        padding: 10px;
-
-        border: 2px solid #0f0f44;
-
-        border-radius: 5px;
-
-        background-color: #e2e2e2;
-
-        text-align: center;
-
-      }  */
+        
 
         body {
 
@@ -83,18 +35,18 @@
 
 <body>
 
-    <form #regForm="ngForm" (ngSubmit)="reg(regForm.value)" novalidate> 
+    <form #regForm="ngForm" (ngSubmit)="reg(regForm.value)" > 
 
         <h2 align="center" style="color:black;">Registration Form</h2>
 
         <table style="width: 50%" align="center">
-            <!-- <tr>
-                <td>CustomerId:</td>
-                <td><input type="text" name="cid" ngModel #cid=ngModel/></td>
-            </tr> -->
             <tr>
+                <td>CustomerId:</td>
+                <td><input type="text" name="cid" ngModel #cid=ngModel/></td> -->
+            <!-- </tr>
+            <tr> -->
 
-                <td>Name:</td>
+                <!-- <td>Name:</td>
                 <input type="text"   name="name"   ngModel #name=ngModel  >
 
             
@@ -128,7 +80,7 @@
                 <td>Gender:</td>
                 <td><input type="radio" name="gender" ngModel #gender=ngModel value="male">Male
                     <input type="radio" name="gender" checked ngModel #gender=ngModel value="female">Female
-                </td>
+                </td>
             </tr>
             <tr>
 
@@ -140,16 +92,23 @@
             <tr>
 
                 <td>Desciption:</td>
-                <input type="text"   name="description"   ngModel #description=ngModel  >
+                <input type="text"  placeholder="enter password" name="description"   ngModel #description=ngModel  >
+
+
+            </tr>
+            <tr>
+
+                <td>password:</td>
+                <input type="password"   name="password"   ngModel #password=ngModel  >
 
 
             </tr>
 
             <tr>
                 <td></td>
-                <td><button type="submit" class="btn btn-sucess">register</button>
+                <td><button type="submit">register</button>
 
-                    <button type="reset" class="btn btn-sucess">reset</button>
+                    <input type="reset" value="Cancel" />
                 </td>
 
             </tr>
@@ -157,7 +116,8 @@
             <tr>
 
 
-                
+                <td></td>
+                <td><a href="RegistrationForm.jsp">New User?</a></td>
 
         </table>
 
@@ -165,6 +125,50 @@
 
 
 
+</body>
+
+</html>  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Slide Navbar</title>
+	<!-- <link rel="stylesheet" type="text/css" href="slide navbar style.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main">
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+		<div class="signup">
+			<form #regForm="ngForm" (ngSubmit)="reg(regForm.value)" > 
+				
+				<input type="text" name="name"   ngModel #name=ngModel placeholder="CustomerName" required="">
+				<input type="text" name="address"   ngModel #address=ngModel placeholder="Address" required="">
+				<input type="text" name="email"   ngModel #email=ngModel placeholder="Email" required="">
+               
+				<input type="text" name="age"   ngModel #age=ngModel placeholder="Age" required="">
+                
+				<input type="text" name="gender" ngModel #gender=ngModel  placeholder="gender">
+                <input type="radio" name="gender" ngModel #gender=ngModel  placeholder="gender">Male
+                <input type="radio" name="gender" ngModel #gender=ngModel  placeholder="gender">Female
+               
+                    
+               
+				<input type="text" name="phoneno"   ngModel #phoneno=ngModel placeholder="Phoneno" required="">
+				<input type="password"name="password"   ngModel #password=ngModel placeholder="Password" required="">
+                <input type="password"name="password"   ngModel #password=ngModel placeholder="Re-enter Password" required="">
+                <input type="text"name="description"   ngModel #description=ngModel placeholder="Description" required="">
+
+
+				<button>Register</button>
+			</form>
+		</div>
+
+
+	</div>
 </body>
 
 </html>

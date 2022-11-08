@@ -1,120 +1,125 @@
-<!-- <p>problem works!</p>
-<button (click)="getallproblems()" class="glyphicon glyphicon-trash">click</button> -->
 
 
 
 
 
+<html>
+    <head>
 
-
-<div class="container">
-    <table class="table border table-border table-striped table-hover table-sm text-center">
-        <thead>
-            <tr class="bg-info text-white">
-                <th> TypeId </th>
-                <th> Type</th>
-
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr *ngFor="let prb of problem">
-                <td> {{prb.type}} </td>
-
-                <td><button class="btn btn-outline-danger btn-sm"> {{prb.typeid }}</button> </td>
-
-            </tr>
-        </tbody>
-         
-    </table>
-
-
-</div>
-<div class="container">
-    <table class="table border table-border table-striped  table-sm text-center">
-        <thead>
-            <tr class="bg-dark text-white">
-                
-                <th class="heading">TYPE</th>
-                <th>SYMPTOMS</th>
-                <th>CLICK HERE</th>
-
-
-            </tr>
-
-        </thead>
-
-        <tbody>
-            
-            <th class="prb">general check up </th>
-            <th class="sym">Diet,Weight,Dental,Diabaties,Blood Pressure,Blood Test,Obesity,Body pains.</th>
-            <button class="btn btn-primary" (click)="getid(prb.typeid)">click</button><br>
-
-
-        </tbody>
-          <tbody>
-            
-            <th class="prb">Allergists</th>
-            <th class="sym">watery eyes,Itchy nose,Sneezing,Runny nose,Rashes,Hives,<br>Stomach cramps,Vomiting.</th>
-            <button class="btn btn-primary" (click)="getid(1002)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-           
-            <th class="prb">Cardiologists</th>
-            <th class="sym">Heart dieseases,Cancer,calcium deficiency,preeclampsia.</th>
-            <button class="btn btn-primary" (click)="getid(1003)">click</button>
-        </tbody>
-        <br>
-        <tbody>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">General Check Up</h5>
+                  <p class="card-text">Diet,Weight,Dental,Diabaties,Blood Pressure,Blood Test,Obesity,Body pains.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1001)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Allergists</h5>
+                  <p class="card-text">Watery eyes,Itchy nose,Sneezing,Runny nose,Rashes,Hives,Stomach cramps,Vomiting.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1002)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+        
           
-            <th class="prb">Dermitologists</th>
-            <th class="sym">Acne,Dryness,Itching,Rashes/skin allergies,Darkening of underarms and neck,<br>Yellow deposits mainly
-                around eyes.</th>
-                <button class="btn btn-primary" (click)="getid(1004)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-           
-            <th class="prb">Emergency Specialists</th>
-            <th class="sym">Outbreak, Accident,Sudden Heart Attack,Unexpected Injuries.</th>
-            <button class="btn btn-primary" (click)="getid(1005)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-           
-            <th class="prb">Hematologist</th>
-            <th class="sym">Diagnosing,Treating and managing diseases that affect your blood,<br> marrow,and any blood relating
-                dieseases.</th>
-                <button class="btn btn-primary" (click)="getid(1006)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-           
-            <th class="prb">Infectious Specialists</th>
-            <th class="sym">Bacterial Infections,Viral Infections,Tropical Diseases,Malaria,Tuberculosis,Paediatric Infectious.</th>
-            <button class="btn btn-primary" (click)="getid(1007)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-         
-            <th class="prb">Nuerologists</th>
-            <th class="sym">treat diseases of the brain and spinal cord,peripheral nerves and muscles.</th>
-            <button class="btn btn-primary" (click)="getid(1008)">click</button>
-        </tbody>
-        <br>
-        <tbody>
-           
-            <th class="prb">Oncologists</th>
-            <th class="sym">Diagnosing and Treating cancer,They will discuss each option's benefits and Side effects.</th>
-            <button class="btn btn-primary" (click)="getid(1009)">click</button>
-        </tbody>
-        <br>
-        <tbody>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Cardiologists</h5>
+                  <p class="card-text">Heart dieseases,Cancer,calcium deficiency,preeclampsia.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1003)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Dermitologists</h5>
+                  <p class="card-text">Acne,Dryness,Itching,Rashes/skin allergies,Darkening of underarms and neck,Yellow deposits mainly
+                    around eyes.</p>
+                  <a href="#" class="btn btn-danger"(click)="getid(1004)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Emergency Specialists</h5>
+                  <p class="card-text">Outbreak, Accident,Sudden Heart Attack,Unexpected Injuries.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1005)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Hematologist</h5>
+                  <p class="card-text">Diagnosing,Treating and managing diseases that affect your blood,marrow,and any blood relating
+                    dieseases.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1006)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+        
           
-            <th class="prb">Psychiatrists</th>
-            <th class="sym">Mental health disorders,addictive behaviors,personality disorders,depression.</th>
-            <button class="btn btn-primary" (click)="prb.typeid(1010)">click</button>
-        </tbody>
-    </table>
-</div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Infectious Specialists</h5>
+                  <p class="card-text">Bacterial Infections,Viral Infections,Tropical Diseases,Malaria,Tuberculosis,Paediatric Infectious.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1007)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Nuerologists</h5>
+                  <p class="card-text">Treat diseases of the brain and spinal cord,peripheral nerves and muscles.</p>
+                  <a href="#" class="btn btn-danger"(click)="getid(1008)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+          </div>
+<br><br>
+          <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Oncologists</h5>
+                  <p class="card-text">Diagnosing and Treating cancer,They will discuss each option's benefits and Side effects.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1009)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Psychiatrists</h5>
+                  <p class="card-text">Mental health disorders,addictive behaviors,personality disorders,depression.</p>
+                  <a href="#" class="btn btn-danger" (click)="getid(1010)">BOOK APPOINTMENT</a>
+                </div>
+              </div>
+            </div>
+        
+            <div class="col-sm-3"></div>
+            
+            
+          </div>
+          
+        
+        </body>
+</html>
+    

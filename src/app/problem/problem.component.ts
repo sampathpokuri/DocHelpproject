@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProblemServiceService } from '../problem-service.service';
+import { Router } from '@angular/router';
+import { ProblemserviceService } from '../problemservice.service';
 
 @Component({
   selector: 'app-problem',
@@ -7,23 +8,28 @@ import { ProblemServiceService } from '../problem-service.service';
   styleUrls: ['./problem.component.css']
 })
 export class ProblemComponent implements OnInit {
-problem:any;
-  constructor(private service:ProblemServiceService) {
-    this.problem={
-      typeid:'',
-      type:''
-    }
-   }
+  problem: any;
+  constructor(private service: ProblemserviceService, private router: Router) {
 
-
+    this.problem = {
+      typeid: '',
+      type: ''
+    };
+  }
 
   ngOnInit(): void {
-    this.problem=this.service.getallproblems().subscribe((result: any) => {this.problem= result;});
+    this.problem = this.service.getallproblems().subscribe((result: any) => { this.problem = result; });
     console.log(this.problem);
+    // this.problem=this.service.getproblembyid(1001).subscribe((result: any) => {this.problem= result;});
+    // console.log(this.problem);
   }
-   getallproblems(){
-  //   this.problem=this.service.getallproblems().subscribe((result: any) => {this.problem= result;});
-  //   console.log(this.problem);
+  getallproblems() {
+
+  }
+  getid(typeid: any) {
+    console.log(typeid);
+    localStorage.setItem("customer", typeid);
+    this.router.navigate(['doctor']);
   }
 
 }

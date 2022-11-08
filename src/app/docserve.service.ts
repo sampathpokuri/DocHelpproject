@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DocserveService {
-
+object:any;
   constructor(private httpclient:HttpClient) { }
 
   getAlldoctors(){
@@ -13,7 +13,10 @@ export class DocserveService {
   }
   
   getdoctorbyid(doctor: any){
-    return this.httpclient.get('getDoctor'+doctor.docid);
+    return this.httpclient.get('getDoctor/'+doctor);
+  }
+  getdoctorbytypeid(doctor: any){
+    return this.httpclient.get('getDoctorbytype/'+doctor);
   }
 
 
@@ -26,5 +29,5 @@ export class DocserveService {
   } 
   deletedoctor(doctor: any) {
     return this.httpclient.delete('deletedocbyid/' + doctor.typeid);
-  }
+  }
 }

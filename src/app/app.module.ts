@@ -5,28 +5,32 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProblemComponent } from './problem/problem.component';
 import {HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router';
+ import { FormsModule } from '@angular/forms';
+import { RouterModule, Routes } from '@angular/router';
 import { RegistrationComponent } from './registration/registration.component';
-import { HeaderComponent } from './header/header.component';
-import { LoginwithcustomerComponent } from './loginwithcustomer/loginwithcustomer.component';
-import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { DoctorComponent } from './doctor/doctor.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
-    
     AppComponent,
     ProblemComponent,
     RegistrationComponent,
-    HeaderComponent,
-    LoginwithcustomerComponent
+    NavbarComponent,
+    DoctorComponent,LoginComponent, HomeComponent
+  
+   
   ],
   imports: [
     BrowserModule,
-    FormsModule,
     AppRoutingModule,
-    HttpClientModule,
+    FormsModule , 
+           
     RouterModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
