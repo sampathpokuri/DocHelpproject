@@ -2,14 +2,14 @@
     --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
   }
   
-  body {
-    background: #111 !important;
-  }
+  /* body {
+    background: rgb(243, 87, 87) !important;
+  } */
   
   .card {
-    background: #222;
-    border: 1px solid #dd2476;
-    color: rgba(250, 250, 250, 0.8);
+    background: rgb(111, 241, 72);
+    border: 1px solid #0f0f0f;
+    color: rgba(18, 14, 246, 0.956);
     margin-bottom: 2rem;
   }
   

@@ -2,9 +2,30 @@
 <br>
 <br>
 
+<style>
+  
+    body {
+  height: 100%;
+  margin: 0;
+  background-image: url(https://thumbs.dreamstime.com/z/top-view-medical-stethoscope-white-calendar-yellow-background-schedule-doctor-appointment-visit-medicine-concept-flat-lay-133401954.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: aqua;
+}
+</style>
+
+<body>
+  <br>
+  <br>
+   
+    
 
 <div class="container mx-auto mt-4">
+
   <div class="row">
+    <br>
+<br>
     <div class="col-md-4" *ngFor="let emp of doctor">
       <div class="card" style="width: 18rem;">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS001DUDpDrytKhwuVI3ZPYkZOz_VUuwbVu8vTJidQBADLu_wt9-wEnoxR4JpfosoEHjxo&usqp=CAU" class="card-img-top" alt="...">
@@ -12,10 +33,18 @@
     <h5 class="card-title">{{emp.name}}</h5>
         <h6 class="card-subtitle mb-2 ">{{emp.specilization}}</h6>
     
-       <a href="#" class="btn btn-warning"(click)="log(emp.docid)"> Book Appointment</a>
+       <a  class="btn btn-primary"(click)="log(emp.docid)"> Book Appointment</a>
 
   </div>
   </div>
-    </div>    
+    </div>
+    <br>
+<br> 
+  </div>
+  <br>
+<br>
+<br>
+<br> 
+</div>    
    
-         
+    

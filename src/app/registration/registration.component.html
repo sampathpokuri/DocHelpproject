@@ -1,134 +1,3 @@
-<!-- 
-
-
-<!DOCTYPE html>
-
-<html>
-
-<head>
-
-    <meta charset="ISO-8859-1">
-
-    <title>Login Page</title>
-
-    <style>
-        
-
-        body {
-
-            background-image: url(https://media.istockphoto.com/photos/medical-or-science-with-soft-light-background-picture-id532963888?b=1&k=20&m=532963888&s=170667a&w=0&h=M4yUU0hRRuXD6uL3BFIGx_kdEFtusXcK4MhUArhFLfY=);
-
-            background-repeat: no-repeat;
-
-            background-position: center;
-
-            background-size: cover;
-
-            width: 100%;
-
-            height: 100%;
-
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <form #regForm="ngForm" (ngSubmit)="reg(regForm.value)" > 
-
-        <h2 align="center" style="color:black;">Registration Form</h2>
-
-        <table style="width: 50%" align="center">
-            <tr>
-                <td>CustomerId:</td>
-                <td><input type="text" name="cid" ngModel #cid=ngModel/></td> -->
-            <!-- </tr>
-            <tr> -->
-
-                <!-- <td>Name:</td>
-                <input type="text"   name="name"   ngModel #name=ngModel  >
-
-            
-
-            </tr>
-            <tr>
-
-                <td>Address:</td>
-                <input type="text"   name="address"   ngModel #address=ngModel  />
-
-            
-
-            </tr>
-            <tr>
-
-                <td>Email:</td>
-                <input type="text"   name="email"   ngModel #email=ngModel >
-
-            
-
-            </tr>
-            <tr>
-
-                <td>Age:</td>
-                <input type="number"   name="age"   ngModel #age=ngModel  />
-
-            
-
-            </tr>
-            <tr>
-                <td>Gender:</td>
-                <td><input type="radio" name="gender" ngModel #gender=ngModel value="male">Male
-                    <input type="radio" name="gender" checked ngModel #gender=ngModel value="female">Female
-                </td>
-            </tr>
-            <tr>
-
-                <td>PhoneNo:</td>
-                <input type="number"   name="phoneno"   ngModel #phoneno=ngModel  >
-
-
-            </tr>
-            <tr>
-
-                <td>Desciption:</td>
-                <input type="text"  placeholder="enter password" name="description"   ngModel #description=ngModel  >
-
-
-            </tr>
-            <tr>
-
-                <td>password:</td>
-                <input type="password"   name="password"   ngModel #password=ngModel  >
-
-
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><button type="submit">register</button>
-
-                    <input type="reset" value="Cancel" />
-                </td>
-
-            </tr>
-
-            <tr>
-
-
-                <td></td>
-                <td><a href="RegistrationForm.jsp">New User?</a></td>
-
-        </table>
-
-    </form>
-
-
-
-</body>
-
-</html>  -->
-
 <!DOCTYPE html>
 <html>
 
@@ -144,31 +13,42 @@
 
 		<div class="signup">
 			<form #regForm="ngForm" (ngSubmit)="reg(regForm.value)" > 
-				
-				<input type="text" name="name"   ngModel #name=ngModel placeholder="CustomerName" required="">
-				<input type="text" name="address"   ngModel #address=ngModel placeholder="Address" required="">
-				<input type="text" name="email"   ngModel #email=ngModel placeholder="Email" required="">
+				<label for="chk"  aria-hidden="true"></label>
+				<input type="text" name="name"   ngModel required #name=ngModel placeholder="Name" minlength="3" maxlength="18">
+				<input type="text" name="address"   ngModel required #address=ngModel placeholder="Address" >
+				<input type="email" name="email"   ngModel required #email=ngModel placeholder="Email" minlength="8">
                
-				<input type="text" name="age"   ngModel #age=ngModel placeholder="Age" required="">
+				<input type="text" name="age"   ngModel required #age=ngModel placeholder="Age" required="">
                 
-				<input type="text" name="gender" ngModel #gender=ngModel  placeholder="gender">
-                <input type="radio" name="gender" ngModel #gender=ngModel  placeholder="gender">Male
-                <input type="radio" name="gender" ngModel #gender=ngModel  placeholder="gender">Female
+                  <!-- <select name="gender" class="text-center">
+	                   
+	                 <option  value="male" name="gender" ngModel required #gender=ngModel  class="text-center">Male</option>
+	                <option value="female"name="gender" ngModel  #gender=ngModel  class="text-center">Female</option>
+	                <option value="other"name="gender" ngModel  #gender=ngModel  class="text-center">other</option>
+                       </select> -->
+                       
+				<!-- male<input type="radio" value="male" name="gender" ngModel required #gender=ngModel  placeholder="gender">
+                female<input type="radio" value="female" name="gender" ngModel  #gender=ngModel  placeholder="gender"> -->
                
-                    
-               
-				<input type="text" name="phoneno"   ngModel #phoneno=ngModel placeholder="Phoneno" required="">
-				<input type="password"name="password"   ngModel #password=ngModel placeholder="Password" required="">
-                <input type="password"name="password"   ngModel #password=ngModel placeholder="Re-enter Password" required="">
-                <input type="text"name="description"   ngModel #description=ngModel placeholder="Description" required="">
+				<input type="text" name="phoneno"   ngModel required #phoneno=ngModel placeholder="Phoneno" maxlength="10" minlength="10">
+				<input type="password"name="password"   ngModel required #password=ngModel placeholder="password" required="">
+                <input type="text"name="description"   ngModel required #description=ngModel placeholder="Description" maxlength="256">
 
 
-				<button>Register</button>
+				<button type="submit" [disabled]="!regForm.valid">Register</button>
 			</form>
 		</div>
 
 
 	</div>
+    <div *ngIf="name.errors?.['required']&&name.touched">name is mandatory..</div>
+    <div *ngIf="name.errors?.['minlength']&&name.touched">name is min 3 chars..</div>
+    <!-- <div *ngIf="gender.errors?.['required']&&gender.touched">gender is mandatory..</div> -->
+    <div *ngIf="address.errors?.['required']&&address.touched">address is mandatory..</div>
+    <div *ngIf="email.errors?.['required']&&email.touched">email is mandatory..</div>
+   <div *ngIf="email.errors?.['minlength']&&email.touched">email is min 8 characters..</div>
+    <div *ngIf="phoneno.errors?.['required']&&phoneno.touched">phoneno is mandatory..</div>
+    <div *ngIf="phoneno.errors?.['minlength']&&phoneno.touched">phoneno is 10 digits.</div>
 </body>
 
 </html>
