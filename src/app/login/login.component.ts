@@ -15,6 +15,9 @@ export class LoginComponent implements OnInit {
   allvar: any;
   toast: any;
   route: any;
+  email:any;
+  password:any;
+
   constructor(private service: PatserveService, private router: Router) {
     this.loginForm = {
       email: '',
@@ -27,8 +30,8 @@ export class LoginComponent implements OnInit {
   }
   logForm: any = '';
   ngOnInit(): void {
-
-    this.service.getAllcustomers().subscribe((result: any) => { this.allvar = result, console.log(this.allvar) });
+console.log(this.email);
+    this.service.getcustomerbyemail(this.email).subscribe((result: any) => { this.allvar = result, console.log(this.allvar) });
 
 
 
@@ -38,29 +41,46 @@ export class LoginComponent implements OnInit {
   log(logForm: any) {
     this.temp = 0;
     console.log(logForm)
+    console.log(this.email)
     console.log(this.allvar)
+    this.service.getcustomerbyemail(this.email).subscribe((result: any) => { this.allvar = result, console.log(this.allvar) });
     
-    for (const i in this.allvar) {
-      // console.log(this.allvar[i].email,'  ',this.allvar[i].password)
-      this.temp = this.temp + 1;
-      if (this.allvar[i].email == logForm.email && this.allvar[i].password == logForm.password) {
-        this.loginForm = this.allvar[i];
-        this.temp = this.temp - 1;
-        console.log('login succesfull', this.loginForm)
-        this.service.setUserLoggedIn();
-        localStorage.setItem("object", JSON.stringify(this.loginForm));
-        //  this.toast.success({detail:'Success',summary:'This is Success', sticky:true,position:'tr'})
-        this.router.navigate(['cart']);
-      }
-    }
+    // for (const i in this.allvar) {
+    //   // console.log(this.allvar[i].email,'  ',this.allvar[i].password)
+    //   this.temp = this.temp + 1;
+    //   if (this.allvar[i].email == logForm.email && this.allvar[i].password == logForm.password) {
+    //     this.loginForm = this.allvar[i];
+    //     this.temp = this.temp - 1;
+    //     console.log('login succesfull', this.loginForm)
+    //     this.service.setUserLoggedIn();
+    //     localStorage.setItem("object", JSON.stringify(this.loginForm));
+    //     //  this.toast.success({detail:'Success',summary:'This is Success', sticky:true,position:'tr'})
+    //     this.router.navigate(['patwithdoc']);
+    //   }
+    // }
 
-    console.log(this.temp, '  ', this.allvar.length)
-    if (this.temp == this.allvar.length) {
-      this.toast.error({ detail: 'Login Failed', summary: 'Please Verify your Details', sticky: true, position: 'tr' })
+    // console.log(this.temp, '  ', this.allvar.length)
+    // if (this.temp == this.allvar.length) {
+    //   this.toast.error({ detail: 'Login Failed', summary: 'Please Verify your Details', sticky: true, position: 'tr' })
 
-    }
+    // }
 
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //     this.service.getcustomerbyemail(logForm.email,logForm.password).subscribe((result: any) => {this.loginForm=result});
 
 

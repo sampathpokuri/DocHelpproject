@@ -19,11 +19,11 @@
           <div class="face face1">
             <div class="content">
               <span class="stars"></span>
-              <h2 class="java">patient name</h2>
-              
-              <p class="java">age</p>
-              <p class="java">blood group</p>
-              <p class="java">last date about consultant</p>
+              <h2 class="java">{{obj.name}}</h2>
+              <br>
+              <p class="java">Age:{{obj.age}}</p>
+              <!-- <p class="java">Gender:{{obj.gender}}</p> -->
+              <p class="java">Slot:12am to 1pm</p>
             </div>
           </div>
           <div class="face face2">
@@ -35,9 +35,10 @@
           <div class="face face1">
             <div class="content">
               <span class="stars"></span>
-              <h2 class="python">D.SASHANK</h2>
-              <p class="python">details of doctor -qualification</p>
-              <
+              <h2 class="python">{{docobj.name|uppercase}}</h2><br>
+              <p class="python">Specialization:{{docobj.specilization|uppercase}}</p><br>
+              <p class="python">Experience:{{docobj.experience}}</p>
+              
             </div>
           </div>
           <div class="face face2">

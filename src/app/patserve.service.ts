@@ -16,8 +16,8 @@ export class PatserveService {
   getcustomerbyid(customer: any){
     return this.httpclient.get('getcustomer/'+customer);
   }
-  getcustomerbyemail(email: any,password: any){
-    return this.httpclient.get('getcustomerbyemail/'+email+'/'+password);
+  getcustomerbyemail(email: any){
+    return this.httpclient.get('getcustomerbyemail/'+email);
   }
 
 

@@ -63,27 +63,27 @@ password:<input type="text" name="password" ngModel #password="ngModel">
 		<br>
 
 		<div class="Login">
-			<form class="login" #loginform="ngForm"  (ngSubmit)="log(loginform.value)">
+			<!-- <form class="login" #loginform="ngForm"  (ngSubmit)="log(loginform.value)"> -->
 
 				<br>
 				<br>
 				<br>
 				<br>
 
-				<input type="email" placeholder=" Email" name="email" ngModel #email="ngModel">
+				<!-- <input type="email" placeholder=" Email" name="email" ngModel #email="ngModel">
 				
-				<input type="password" name="password" ngModel #password="ngModel" placeholder="Password" >
+				<input type="password" name="password" ngModel #password="ngModel" placeholder="Password" > -->
 
+<input type="email" placeholder="emailid" [(ngModel)]="email">
 
-
-				<button type="submit" >Login</button>
+				<button type="submit" (click)="log(email)">Login</button>
 
 
 
 
 				<br>
 
-			</form>
+			<!-- </form> -->
 			<div style="text-align: center;">
 				<a href="RegistrationForm.jsp">New User?</a>
 			</div>
