@@ -5,121 +5,616 @@
 
 <html>
     <head>
-
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <div class="row">
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">General Check Up</h5>
-                  <p class="card-text">Diet,Weight,Dental,Diabaties,Blood Pressure,Blood Test,Obesity,Body pains.</p>
-                  <a  class="btn btn-danger" (click)="getid(1001)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Allergists</h5>
-                  <p class="card-text">Watery eyes,Itchy nose,Sneezing,Runny nose,Rashes,Hives,Stomach cramps,Vomiting.</p>
-                  <a  class="btn btn-danger" (click)="getid(1002)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
+   
         
-          
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Cardiologists</h5>
-                  <p class="card-text">Heart dieseases,Cancer,calcium deficiency,preeclampsia.</p>
-                  <a  class="btn btn-danger" (click)="getid(1003)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Dermitologists</h5>
-                  <p class="card-text">Acne,Dryness,Itching,Rashes/skin allergies,Darkening of underarms and neck,Yellow deposits mainly
-                    around eyes.</p>
-                  <a  class="btn btn-danger"(click)="getid(1004)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Emergency Specialists</h5>
-                  <p class="card-text">Outbreak, Accident,Sudden Heart Attack,Unexpected Injuries.</p>
-                  <a  class="btn btn-danger" (click)="getid(1005)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Hematologist</h5>
-                  <p class="card-text">Diagnosing,Treating and managing diseases that affect your blood,marrow,and any blood relating
-                    dieseases.</p>
-                  <a  class="btn btn-danger" (click)="getid(1006)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-        
           
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Infectious Specialists</h5>
-                  <p class="card-text">Bacterial Infections,Viral Infections,Tropical Diseases,Malaria,Tuberculosis,Paediatric Infectious.</p>
-                  <a class="btn btn-danger" (click)="getid(1007)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Nuerologists</h5>
-                  <p class="card-text">Treat diseases of the brain and spinal cord,peripheral nerves and muscles.</p>
-                  <a  class="btn btn-danger"(click)="getid(1008)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-          </div>
-<br><br>
-          <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Oncologists</h5>
-                  <p class="card-text">Diagnosing and Treating cancer,They will discuss each option's benefits and Side effects.</p>
-                  <a  class="btn btn-danger" (click)="getid(1009)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Psychiatrists</h5>
-                  <p class="card-text">Mental health disorders,addictive behaviors,personality disorders,depression.</p>
-                  <a  class="btn btn-danger" (click)="getid(1010)">BOOK APPOINTMENT</a>
-                </div>
-              </div>
-            </div>
+          <body>
+            <main class="main">
+                
+                <section class="card-area">
         
-            <div class="col-sm-3"></div>
+                    <!-- Card: City -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--city">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <g>
+                                           <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z"/>
+                                           <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
+                                               V7.1h24.8v15.3c0,1.1,0.9,2,2,2s2-0.9,2-2V5.1c0-1.1-0.9-2-2-2H3.7c-1.1,0-2,0.9-2,2v51c0,1.1,0.9,2,2,2s2-0.9,2-2V36.5H13
+                                               c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3H13z"/>
+                                           <path d="M58,11.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c0,0,0,0,0,0
+                                               c0-0.1-0.1-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1
+                                               c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0
+                                               c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1l-12.6,7.8
+                                               c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2
+                                               c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0v5.4H22.1
+                                               c-1.1,0-2,0.9-2,2v28.9c0,1.1,0.9,2,2,2s2-0.9,2-2V29.3h17.3v26.9c0,1.1,0.9,2,2,2s2-0.9,2-2V21l8.6-5.3v40.5c0,1.1,0.9,2,2,2
+                                               s2-0.9,2-2V12.1C58,12,58,12,58,11.9z"/>
+                                           <path d="M28,31L28,31c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,31,28,31z"/>
+                                           <path d="M33.5,31L33.5,31c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,31,33.5,31z"/>
+                                           <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z"/>
+                                           <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z"/>
+                                       </g>
+                                       </svg>
+        
+                                       <h2 class="card-front__heading">
+                                        General Check Up
+                                    </h2>
+                                    <!-- <p class="card-front__text-price">
+                                        From £29
+                                    </p> -->
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--city">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZsn49vPC4-Kya52PKL9t5ceBURvj2sYGjmw&usqp=CAU">                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--city">
+                                        general checkup
+                                    </h3>
+                                    
+                                    
+                                    <p class="inside-page__text">
+                                        Diet,Weight,Dental,Diabaties,<br>Blood Pressure,Blood Test,Obesity,Body pains...
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--city" (click)="getid(1001)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Card: Ski -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--ski">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <g>
+                                           <path d="M58.8,54.5L38.5,19.3c-0.4-0.6-1-1-1.7-1s-1.4,0.4-1.7,1L14.8,54.5c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.7,1h40.6
+                                               c0.7,0,1.4-0.4,1.7-1C59.2,55.9,59.2,55.1,58.8,54.5z M36.8,24.3l5.8,10c-0.5-0.2-1.1-0.3-1.7-0.3c-2.5,0-3.7,1.5-4.6,2.5
+                                               c-0.7,0.9-1,1.1-1.5,1.1s-0.8-0.2-1.5-1.1c-0.6-0.7-1.3-1.5-2.4-2.1L36.8,24.3z M20,53.5l8.9-15.4c0.5,0,0.7,0.3,1.4,1.1
+                                               c0.8,1,2.1,2.5,4.6,2.5s3.7-1.5,4.6-2.5c0.7-0.9,1-1.1,1.5-1.1c0.5,0,0.8,0.2,1.5,1.1c0.8,1,2.1,2.5,4.5,2.5l6.8,11.8H20z"/>
+                                           <path d="M14.7,51.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H6.4l9.1-15.7c0.6,0.6,1.5,1.3,2.9,1.3c1.8,0,2.8-1.2,3.3-1.8
+                                               c0.1-0.1,0.2-0.2,0.3-0.3c0.1,0.1,0.2,0.2,0.3,0.3c0.5,0.6,1.5,1.8,3.3,1.8c1.1,0,2-0.9,2-2c0-1.1-0.9-2-1.9-2
+                                               c-0.1-0.1-0.2-0.2-0.3-0.4c-0.5-0.6-1.5-1.8-3.3-1.8c-1.8,0-2.8,1.2-3.3,1.8c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1-0.1-0.2-0.2-0.3-0.3
+                                               c-0.1-0.2-0.3-0.4-0.5-0.6l5.7-9.9l3.8,6.6c0.6,1,1.8,1.3,2.7,0.7c1-0.6,1.3-1.8,0.7-2.7L25,13.2c-0.4-0.6-1-1-1.7-1
+                                               s-1.4,0.4-1.7,1l-8.4,14.5c-0.1,0.1-0.2,0.3-0.3,0.4L1.2,48.5c0,0,0,0.1,0,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2
+                                               c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2C1,50,1,50,1,50.1
+                                               c0,0.1,0,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+                                               c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0c0.1,0.1,0.2,0.1,0.3,0.1c0,0,0.1,0,0.1,0c0.1,0,0.3,0.1,0.5,0.1c0,0,0,0,0,0
+                                               c0,0,0,0,0,0c0,0,0,0,0,0H14.7z"/>
+                                           <path d="M40.7,12.3h3.1l-2.2,2.2c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l2.2-2.2v3.1
+                                               c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5v-3.1l2.2,2.2c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1l-2.2-2.2h3.1
+                                               c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5h-3.1l2.2-2.2c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L49,7.2V4
+                                               c0-0.8-0.7-1.5-1.5-1.5S46,3.2,46,4v3.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1l2.2,2.2h-3.1
+                                               c-0.8,0-1.5,0.7-1.5,1.5S39.9,12.3,40.7,12.3z"/>
+                                       </g>
+                                       </svg>
+                                                       <h2 class="card-front__heading">
+                                                        Allergists
+                                                       </h2>
+                                                       
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--ski">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <img src="data:image/jpeg;base64,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">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--ski">
+                                        Allergists
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        Watery eyes,Itchy nose,Sneezing,Rashes,Hives,<br>Stomach cramps,Vomiting.
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--ski" (click)="getid(1002)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Card: Beach -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--beach">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <path d="M57.2,28h-7.4c-0.4-4-2-7.7-4.4-10.6l3.2-3.2c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0l-3.2,3.2c-3-2.4-6.6-4-10.6-4.4V2.8
+                                           c0-1.1-0.9-2-2-2s-2,0.9-2,2v7.4c-4,0.4-7.7,2-10.6,4.4l-3.2-3.2c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8l3.2,3.2
+                                           c-2.4,3-4,6.6-4.4,10.6H2.8c-1.1,0-2,0.9-2,2s0.9,2,2,2h7.4c0.4,4,2,7.7,4.4,10.6l-3.2,3.2c-0.8,0.8-0.8,2,0,2.8
+                                           c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.2-3.2c3,2.4,6.6,4,10.6,4.4v7.4c0,1.1,0.9,2,2,2s2-0.9,2-2v-7.4c4-0.4,7.7-2,10.6-4.4
+                                           l3.2,3.2c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-3.2-3.2c2.4-3,4-6.6,4.4-10.6h7.4c1.1,0,2-0.9,2-2
+                                           S58.3,28,57.2,28z M30,45.9c-8.8,0-15.9-7.2-15.9-15.9c0-8.8,7.2-15.9,15.9-15.9c8.8,0,15.9,7.2,15.9,15.9
+                                           C45.9,38.8,38.8,45.9,30,45.9z"/>
+                                       </svg>
+                                       
+                                                       <h2 class="card-front__heading">
+                                                        Cardiologists
+                                                       </h2>
+                                                       
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--beach">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <img src="data:image/jpeg;base64,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">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--beach">
+                                        Cardiologists
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        Heart dieseases,Cancer,calcium deficiency,preeclampsia.
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--beach" (click)="getid(1003)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Card: Camping -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--camping">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <path d="M57,52.1c0-0.4-0.1-0.7-0.3-1.1l-6.3-10.8L32.4,9l2.3-4c0.6-1,0.2-2.2-0.7-2.7c-1-0.6-2.2-0.2-2.7,0.7L30,5.2L28.7,3
+                                           c-0.6-1-1.8-1.3-2.7-0.7c-1,0.6-1.3,1.8-0.7,2.7l2.3,4l-18,31.1L3.3,51C3.1,51.3,3,51.7,3,52.1c0,0.4,0.1,0.7,0.3,1
+                                           c0.4,0.6,1,1,1.7,1h50c0.7,0,1.4-0.4,1.7-1C56.9,52.8,57,52.4,57,52.1z M34.7,49.8C34.2,50,32.1,50,30,50s-4.2,0-4.7-0.2
+                                           c-0.2-0.5-0.2-2.1-0.2-3.6l0-4.3c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9l0,4.3C34.9,47.7,34.9,49.3,34.7,49.8z M13.1,42.1L28,16.5
+                                           v16.7c-3.9,0.9-6.9,4.4-6.9,8.6l0,4.3c0,1.7,0,2.9,0.2,4H8.5L13.1,42.1z M38.7,50.1c0.2-1,0.2-2.3,0.2-4l0-4.3
+                                           c0-4.2-2.9-7.7-6.9-8.6V16.5l15,25.7l4.6,7.9H38.7z"/>
+                                       </svg>
+                                                       <h2 class="card-front__heading">
+                                                          Dermitologists
+                                                       </h2>
+                                                       
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--camping">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                       <img src="data:image/jpeg;base64,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">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--camping">
+                                        Dermitologists
+                                    </h3>
+                                    <p class="inside-page__text">
+                                       Itching,Darkening of underarms and neck,Yellow deposits around eyes.
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--camping" (click)="getid(1004)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </section>
+                
             
             
-          </div>
-          
+                
+              <section class="card-area">
+      
+                  <!-- Card: City -->
+                  <section class="card-section">
+                      <div class="card">
+                          <div class="flip-card">
+                              <div class="flip-card__container">
+                                  <div class="card-front">
+                                      <div class="card-front__tp card-front__tp--city">
+                                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                     <g>
+                                         <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z"/>
+                                         <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
+                                             V7.1h24.8v15.3c0,1.1,0.9,2,2,2s2-0.9,2-2V5.1c0-1.1-0.9-2-2-2H3.7c-1.1,0-2,0.9-2,2v51c0,1.1,0.9,2,2,2s2-0.9,2-2V36.5H13
+                                             c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3H13z"/>
+                                         <path d="M58,11.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c0,0,0,0,0,0
+                                             c0-0.1-0.1-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1
+                                             c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0
+                                             c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1l-12.6,7.8
+                                             c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2
+                                             c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0v5.4H22.1
+                                             c-1.1,0-2,0.9-2,2v28.9c0,1.1,0.9,2,2,2s2-0.9,2-2V29.3h17.3v26.9c0,1.1,0.9,2,2,2s2-0.9,2-2V21l8.6-5.3v40.5c0,1.1,0.9,2,2,2
+                                             s2-0.9,2-2V12.1C58,12,58,12,58,11.9z"/>
+                                         <path d="M28,31L28,31c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,31,28,31z"/>
+                                         <path d="M33.5,31L33.5,31c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,31,33.5,31z"/>
+                                         <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z"/>
+                                         <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z"/>
+                                     </g>
+                                     </svg>
+      
+                                     <h2 class="card-front__heading">
+                                        Emergency Specialists
+                                  </h2>
+                                  <!-- <p class="card-front__text-price">
+                                      From £29
+                                  </p> -->
+                                      </div>
+      
+                                      <div class="card-front__bt">
+                                          <p class="card-front__text-view card-front__text-view--city">
+                                              View me
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="card-back">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasPyU89LK2su6nhbjlR1J1RAypc8uxlFavJuJAitM1m1V_sCk8EwcGq7JVFUDoHqr46U&usqp=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">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="inside-page">
+                              <div class="inside-page__container">
+                                  <h3 class="inside-page__heading inside-page__heading--city">
+                                    Emergency Specialists
+                                  </h3>
+                                  <p class="inside-page__text">
+                                    Outbreak,Accident,Sudden Heart Attack & Injuries.
+                                  </p>
+                                  <a  class="inside-page__btn inside-page__btn--city" (click)="getid(1005)">Appointment</a>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+      
+                  <!-- Card: Ski -->
+                  <section class="card-section">
+                      <div class="card">
+                          <div class="flip-card">
+                              <div class="flip-card__container">
+                                  <div class="card-front">
+                                      <div class="card-front__tp card-front__tp--ski">
+                                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                     <g>
+                                         <path d="M58.8,54.5L38.5,19.3c-0.4-0.6-1-1-1.7-1s-1.4,0.4-1.7,1L14.8,54.5c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.7,1h40.6
+                                             c0.7,0,1.4-0.4,1.7-1C59.2,55.9,59.2,55.1,58.8,54.5z M36.8,24.3l5.8,10c-0.5-0.2-1.1-0.3-1.7-0.3c-2.5,0-3.7,1.5-4.6,2.5
+                                             c-0.7,0.9-1,1.1-1.5,1.1s-0.8-0.2-1.5-1.1c-0.6-0.7-1.3-1.5-2.4-2.1L36.8,24.3z M20,53.5l8.9-15.4c0.5,0,0.7,0.3,1.4,1.1
+                                             c0.8,1,2.1,2.5,4.6,2.5s3.7-1.5,4.6-2.5c0.7-0.9,1-1.1,1.5-1.1c0.5,0,0.8,0.2,1.5,1.1c0.8,1,2.1,2.5,4.5,2.5l6.8,11.8H20z"/>
+                                         <path d="M14.7,51.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H6.4l9.1-15.7c0.6,0.6,1.5,1.3,2.9,1.3c1.8,0,2.8-1.2,3.3-1.8
+                                             c0.1-0.1,0.2-0.2,0.3-0.3c0.1,0.1,0.2,0.2,0.3,0.3c0.5,0.6,1.5,1.8,3.3,1.8c1.1,0,2-0.9,2-2c0-1.1-0.9-2-1.9-2
+                                             c-0.1-0.1-0.2-0.2-0.3-0.4c-0.5-0.6-1.5-1.8-3.3-1.8c-1.8,0-2.8,1.2-3.3,1.8c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1-0.1-0.2-0.2-0.3-0.3
+                                             c-0.1-0.2-0.3-0.4-0.5-0.6l5.7-9.9l3.8,6.6c0.6,1,1.8,1.3,2.7,0.7c1-0.6,1.3-1.8,0.7-2.7L25,13.2c-0.4-0.6-1-1-1.7-1
+                                             s-1.4,0.4-1.7,1l-8.4,14.5c-0.1,0.1-0.2,0.3-0.3,0.4L1.2,48.5c0,0,0,0.1,0,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2
+                                             c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2C1,50,1,50,1,50.1
+                                             c0,0.1,0,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+                                             c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0c0.1,0.1,0.2,0.1,0.3,0.1c0,0,0.1,0,0.1,0c0.1,0,0.3,0.1,0.5,0.1c0,0,0,0,0,0
+                                             c0,0,0,0,0,0c0,0,0,0,0,0H14.7z"/>
+                                         <path d="M40.7,12.3h3.1l-2.2,2.2c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l2.2-2.2v3.1
+                                             c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5v-3.1l2.2,2.2c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1l-2.2-2.2h3.1
+                                             c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5h-3.1l2.2-2.2c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L49,7.2V4
+                                             c0-0.8-0.7-1.5-1.5-1.5S46,3.2,46,4v3.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1l2.2,2.2h-3.1
+                                             c-0.8,0-1.5,0.7-1.5,1.5S39.9,12.3,40.7,12.3z"/>
+                                     </g>
+                                     </svg>
+                                                     <h2 class="card-front__heading">
+                                                        Hematologist
+                                                     </h2>
+                                                    
+                                      </div>
+      
+                                      <div class="card-front__bt">
+                                          <p class="card-front__text-view card-front__text-view--ski">
+                                              View me
+                                          </p>
+                                      </div>
+                                  </div>
+      
+                                  <div class="card-back">
+                                      <img src="data:image/jpeg;base64,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">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="inside-page">
+                              <div class="inside-page__container">
+                                  <h3 class="inside-page__heading inside-page__heading--ski">
+                                    Hematologist
+                                  </h3>
+                                  <p class="inside-page__text">
+                                    Diagnosing,Treating and managing diseases that affect your blood,marrow.
+                                  </p>
+                                  <a class="inside-page__btn inside-page__btn--ski" (click)="getid(1006)">Appointment</a>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+      
+                  <!-- Card: Beach -->
+                  <section class="card-section">
+                      <div class="card">
+                          <div class="flip-card">
+                              <div class="flip-card__container">
+                                  <div class="card-front">
+                                      <div class="card-front__tp card-front__tp--beach">
+                                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                     <path d="M57.2,28h-7.4c-0.4-4-2-7.7-4.4-10.6l3.2-3.2c0.8-0.8,0.8-2,0-2.8c-0.8-0.8-2-0.8-2.8,0l-3.2,3.2c-3-2.4-6.6-4-10.6-4.4V2.8
+                                         c0-1.1-0.9-2-2-2s-2,0.9-2,2v7.4c-4,0.4-7.7,2-10.6,4.4l-3.2-3.2c-0.8-0.8-2-0.8-2.8,0c-0.8,0.8-0.8,2,0,2.8l3.2,3.2
+                                         c-2.4,3-4,6.6-4.4,10.6H2.8c-1.1,0-2,0.9-2,2s0.9,2,2,2h7.4c0.4,4,2,7.7,4.4,10.6l-3.2,3.2c-0.8,0.8-0.8,2,0,2.8
+                                         c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l3.2-3.2c3,2.4,6.6,4,10.6,4.4v7.4c0,1.1,0.9,2,2,2s2-0.9,2-2v-7.4c4-0.4,7.7-2,10.6-4.4
+                                         l3.2,3.2c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6c0.8-0.8,0.8-2,0-2.8l-3.2-3.2c2.4-3,4-6.6,4.4-10.6h7.4c1.1,0,2-0.9,2-2
+                                         S58.3,28,57.2,28z M30,45.9c-8.8,0-15.9-7.2-15.9-15.9c0-8.8,7.2-15.9,15.9-15.9c8.8,0,15.9,7.2,15.9,15.9
+                                         C45.9,38.8,38.8,45.9,30,45.9z"/>
+                                     </svg>
+                                     
+                                                     <h2 class="card-front__heading">
+                                                        Infectious Specialists
+                                                     </h2>
+                                                     
+                                      </div>
+      
+                                      <div class="card-front__bt">
+                                          <p class="card-front__text-view card-front__text-view--beach">
+                                              View me
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="card-back">
+                                      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFRUYGRgYGBgYGBgYGBgYGBgYGBgZGRgYGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QD0zPy40NTEBDAwMEA8QHxISHjQsJCs0NDQ0NDQ0NDQ0NjE0NDQ0NDQ0NDQ0NDQ0NDQ0NjQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAOAA4QMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAAEBQIDAAEGB//EADYQAAICAQMCBQIFAwMEAwAAAAECABEDBBIhMUEFEyJRYTJxBhRCgZGhscFSYvAVM3KCI5LR/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJhEAAwEAAgIBBAIDAQAAAAAAAAECERIhAzFBEyJRYQShcYGRQv/aAAwDAQACEQMRAD8A8kEmpmlEmFnUc7ZYuX4mPlJkNszbGR0T031SWoFGRUQpqYfMZLeVovcd5fpBJnSGTACiokh1SaxFLjmaCyU3UYaRqSCySrJAQJdEQk2FkwJILGS6KwsmoktsmEgiXQHkxkGbxYubML2zGWPCvqPMKHErZYQUkCsQlRQUlZEIIkGWJmiooIkZayyBERomRqbmTIhmxMFTUkvWMRPy/vMjTanz/EyBl9QTgSaibCy1VjwqqIbZJVkwsmqQIdFYSS2y9UmwkCHZRR95orCNkzZAXMG2TNkKGOZ5cA5gwEkBLvLmeXAOaKwJMLJqktRIyHRSFloSWpjly4o0yeQOuOaZId5UrbHDQ0DKSlkjBkqUOkQ1QCyytlhr44OyRGk0DESsrL2WQIiNkygiaqWsJHbAtMiBJLM2yVQE2G/njMgVmZETwRciS0JLFSXqkswqykLLceO5fi0xY0BdxgNIMbKwINfUvzJbMa8qXXyCLo2PRT/Ei2kdeqkRv/1A9z9q4Ag7683d2L7yU3+DBeSn8Cp1qTZWANbb45aq2831/aMk03mMW4/2gQfLpySVrpYJ+/Bjb01nyLUVth57ft0/b4mjhlvh43qoANgbW97Udf4r+sJz6cigOt10gmKm1TQv8rmqkSlAk9IZlLBnXabUqvQ8g9x96v8AeZrMdKeOWpR924hqK73GAnEOCCCCLsf2+8tRIZ+VoUB04mJgjTE6NY8UuXHJostAhoJlPlyt8dQsCaOK4aPReySlkjNsMHfHDQ0XOsDyLGWVIKyRlTQCyyBSHHFKziiNVYG6yFQp0lW2BoqKqmVLKEwLArSupklU1ANGqJLxjmkEuGMHrGzz6oM0+IIhc9TwsAwZwXAc0CeTL8+kK49wYkN2PaLfD86q9uFI6etWZRwb4WjfSv8AHUJZmj8cKte6MNdtViqtuA7wA5hdSomySo7njvUp3G/aM1nxZ7GOndgbFgRxgwO6lz0B6k8kRTpchcheeB0UWTXYAdZ3GPwdyVRsbFAm4ENtJYDhGA5u+o46dZlVJGFy2/Rx+lzNjzug4DMdtjvZKj9wSP4jELmF5GRwqcksjCgPbjmdXptOF2vkTCjjsqgHrQt6Y8c3tq/czWo1BGQADGUdaZCP1E8MXHDWK473M/qd4kaPjWN/o5NdUcmUFgzBeAvPG5VbhavuT0kWYZM6KptVJYjiwVH6l6jmuonQacYw+oZMaufM3L+naoXaWUEcC1qq62P0wPWawZChKMjK31I6MXX9S7b+B7d4099IbSTBNZmROCbbsB/mRw42It1o+3xLH0ATdlxKcymvSSN+PueOpPwefvDDnTaz7htQHd2KkdVIPftNOSSFwYu1DKilm6Cb0eRcihl+xHcEdRB9FjbUN5jDbiH0qaIY+7A9QP79I20+mVF2qKAho3KX+Sny5hSGbZErDSGAOkCzJG2RIO2GCZDoTuhlWwiOTp5Q+nj5DVCtklbJD8mGoOyR6aKgDIkHZYdkAg7objNZoWFuZPE9mXvpxc0MNRm/KWiNTczbMgLRwgl6mXqitW3gyrKhHBNfbvFp526xlpl8zAy2tpfHepy40wN2QOpFx/4bmGM7gBzwQe4meL+GLl9WAf8AkvsfiJdMfi8ii2vh/Ij0eiZld1v0IX6HayrW4Kw43AbjXH0mMPDMByvtKM+4hV2iiGboGIH9fb+gn5HKgI3Mqk8gMQCfkd52n4N07hd6qKQH6q2bzwAnFq+0Hpx6hxzci25TZ1Xctfaxj+GtNi06M2wrlLHGSw2huhbYG5Ccge5IMt8R1rLuRcyl8tbAqG1F7aJAYsLB7c1OeGtFkZML43DBdtNtViaW9w4JoHk838whHLbnRvLrkvxuFkptRT1HP1X7D2vDj/6bOfa5Y+gvUZWRbd0J5WhRJYHadqngEf5izWpkLlmQbH4UMHYWq8XR78DpM0ObGd72rKllHZWBLtRO1WYnqp59zAf+sMSoYKTe4EAcEDg3Q9XAINfHaWk/hDUY3nZmp0rIGd1p22hUXkAeptzMOD7Doa/rVo9Wikq7EMeNy1xZFBx+oc/0+JrHhyFmZGVmJLAMyg8GrJY114v7wPXZWY3kt8grcAOgNjg1zVV/mXP400S5PWONJqnDlHpdyEY/SoBcAMvqHFH08ezDpAtHmD5nOoUKqdcI9Ivde5lB9R5s+9fAktLgBXGu9lfcxtlKuCFQptI6imavkHmEeCgZGtgN+nqm6BkUkDd9jXMHOlJ5uHRoqsLQqRyPTVccECvaB63V4sX1uoPtdt/9RzE/5HUM7YsA8pWdm4LFQLCks/Y8fT/Hy78J/CyYTvc+Zl67mHCn/at/1P8ASGpBxTWi3S58z5N2xhhK+nctE8/USeR7/tXzGJSuscvhuU6vSjYb6jkSWzn8jxaAfle8r1CbQOOTIafxtQtMORxIjxBXdTdARpMydIvbTcdINlwRtlddu6xUDRw4tekRWoR6rER2i53A6x5rCBdzldfktuJpPZcLk8IahwOkpOoMqyPKme5odcx0Fht3SSOOR0iGrl5NwJbx4gby5kntMyAabw6mm4Me48QZd3UzmNKtsBOq02XaoFXFXow/kpS1hmLTm4w0+AjoamYXVunWMMOOZOmcbbYibTnLqGsEqqkkDvQ6Trvw1qNiOjp5KbvSS3LM61u55v6f4URV4Voi3nB1Zd9rY4NG+kO8S8l8IxKxcYlxq72erigWYfV7/wDqD2mXlvftOjx18/gU+Jq2TUZFYkEAuNrGyNw9PyNp3Ef7a6RXq8+O9iK+8irG4Ejjqeu2M/GchbymY0+J8mDIB6uAeG5rjaXIavbt0R6rcV81nCvuLnrZBdVBJqrBP0/Ij8b6N5nc01rGUKQocooA3raqea4sci759+OLi9sxC7USvk1uNEmx3vmvsJA5Rt23YBAqua3A1ftu5qWafXqGtuBQAA+kAHkcAmyLqu9TXvOzaYxdf2U5sbhWLsymrVbHNHr/AD2+b95mnyOVJHXoSStVRFbSLJ5/521j8wlW3EbgQtmztHNUO/x3lbZCr1uvadwPWz1+ODGaY8+BppdK7/8AZVmahuDBVPsCm739XQk8Hiupmm0hVy+3JjVSu9f9S2N67rFgVyP5inQZlZwrnajekNXCsGG0muTwF/5dsxrcShkTGOCQC9EkihZQj0ghiOvYXfaW3uYZ1ODc+NYceoVmYuVUbdjUjFx9ZFUfSR88Cd4cV8ieaeF6VEbHk1GIlCyLYOxUVv1MehHPep6fnypjSyRQHA6kj494q6EuOP8AAl175Usqlgf86zm/HPGmK0AQe4ne6JxkQOoIB/1CjPPfxpjZMlgRT2+zk8kfeu9TOY/Mnv1mvzxECfIbszEK8317ToOr6U/KOw8C/wDmPrY0O19Z0hxqopRQ9pxHgmt8oFqs9o60/jhc0V5MyqXpxVPGni6C9ZpQ3Wcl4npCrGhOxY8UTzAX0w6kXCXhUU5eo4pdMxMLx+HjvHWo0osECafEJfI2fmpi3aVFKJS4vpw394ydIPlSvVXxHpKsX7m9pksmRGm/oP0fhoWmao2B6FekTlye8J0+oJNRVrOXycq7Y3xOgPJUHrVgGvtJv4zgT6sg+w9X9oI+IOACzAAMpUEbWDCjuHvRIB7ce0J0nhmAVWJeO5G4/wAtcxf7BLxpJtsDy/jFbrGnXjc55544Uf8A7Ot8NzYTgROFXMpQigjFyCxIF8EHbVe/bmV6VFB4VR9gBB8uxNQu9WbzSuyzuAYCnpa9J4HN3Rb5mPkSpYlhrNTv2oSeN6N0yZVyMadkZX9NPQAFjoSQB+4PvFel0bZnXHuqzuyUCyriCjc/txtA+SROj8UwOlp9auitjJo0cbqu2iRyK5r/AFfNBfoPFs2JMjrsDjbtVVtto3hmY/qIrvf7VLh056NZeMG/FXhSacq6Y7G8YyGO8ZCVXIHDEdwQOPc1U5PJhZVBYAWeBfJ45PsK9rvkcRt4h4lmyKi53ZgCPVuIKEgEemgLoCj7d4r1OYvyzXbEkgVbVySa5P8Abt1m0Kkkmzqn12afKzgAsBtC1fH0ils/A4kPLY+oFmHQsQa55PP7yOHTluaO0XZAuuIWmak2hQTRG4k2q2GIC9KvufmX69FN56CNJpzkJxKu59ooLxztPJ9z37dYe+k4R2ZSzuwKptIUmiF3f6qI96se9EPw7K2NGKty4CtTAHbZJ57cCr/3Q/w/CUdczIfLV1C0ASSKHvxZH1DqREzCn7Oh1ulTMpxoKfDShNwq2VSxZepA4W/e+Z034W8JyBN+pU+YTwCwYBQBRoGh3nA6jRK2fIGVvNZy29clU7eo2K9NE9Ooqdt4NpvFMKgk49Qn+h3K5K/2ORR/9pFbhHjmXX5w6bPuHCDk/wBJzP4h8E3qVJt29+0cZPxNgShqBk07k1tyoRfuUdbRh/4kxlnCEbutjgj2PSpKbTL83hVr36/o8P8AEPAmRiLB+xgKaHaQW6R/+LcbDMx5AnP4sxJomxOhPUYQ7c+zer1YPpXoJHRakhhXvM1OgbqFNe8O8H8MZze36eTBltwoOs0ahgCetTedIVpsYCge0rzpMTmS6FrpAhkViRdEe8aPjgefRBuoo+46yk0LcAMzAWByfaadVKgMwF8kdxM1SNiU3RJ6HvUTPqDfMa7LmXXaGPk4v9RmRX583Kxl/Sr8h7OoHzJ6PKvfrFTZuJFM9GNor6Oo6j8xtNDkxtpH4Fzn/D8gYWRzG2nzCZUjlax4PdO8J1iF8TKv11ac7TuHIpq4vp+8WYnmtT4jkVlxYltnUkMeVQD6mI+P7zCl2VHss8UxsqqytuGMYr06NvdHKUykjk8d+/8AZXqfCnNHFjctRO0JyyDqB2+oj+eL6BqnhTYlV8BL5lvfvb05g12GHwTY57d5zvjep8/Owxq6eWCzBWNbwbYAg0BYJ97MqE/SOhJNg3iOn0zH1NlwvwWxujAA8CxfH78f4i3Lp0alRW46neCGYdXonrXND+k6ddXnVce5yrAK4GWmcJ13K3JFgV06+8WLp8ud2a1QFroVtaieRfNmz35uay2vZarF7/sWYdODYQ1xwpO1iWAVlXm7IJ6WPib12nGPalggKGIBUsd1dWHT29v5jx8booRE9ZsIuREZlvglOTyTxd1XSBLg0+Ng+oe2qhgwJyO1OxIVfsLP7x8iprky3TaPApBcl9pUMqUV3GzsLiwTZArrw3xbPxI+WDmyf9x1ZExqdqoCK4o/UB1I6cDr0BfV4sQxtg37kdmCOLVeKuyB8eqr44qzAdQSx3ve42Qb9LL3CD9O0/p+bh/kzr3uh3gGhdm3Itt+gdATO/8AD/HM+FAmp07iv1oNwr5EVfhJUBXm6Fg+xM7jzbEi67zA8EOtpPGKBm0uuUqyBwhunBBU/HeNSRKFREJ2qBfJIAFn5kWyyTrTaX3ezn/xH4SNQ1VVd5yjfhHa9Xxc9Dy5IFmYE3KmmlhyX4+20/Yq0Xh6ouxlBqRwaMI5K8CHu8pLR8jJQkRyqOsCzGGtANSsQ6BnMpJm3JijPkzNfG0f4lZpk+xf+IMp31dgARK7x3rtAAoZW3H9X3iI47msro6vBx44vgjYmSG2ZKOjosMmuLpUYNgUi+8k2MKoNdZOmL8v4J4QVXrVw3w97PJiXLkJk9DkO6osMb8bctna4nHvDsT1xFGkw1zcMTJ2mDRzoP1uvKYyV5dqRAOpduF/jk/YGa0nguIYDhYWXo5HUlWdxzd+1k0Iu06ZDnLNXlovo99zAWR+24H+neN1ySWvwdCfFYXajQEuMyEFkxsgQ0rOeSt5R6l5/wCcxW3iOVsgwlEXYEOo5DWGUE7LHye56DnrGi54BomX8xqGPJK4R06AK3f/AJ2ilP5K6aEravyvPdBtd39FbWCKLAYGuDRP8CJvE9Y2oNvW4fSQAt+4Px35nRfiLMmzaANx6e/3nGZtyt9uk6VKzSfHrY0bxCmDFFBNP04O4XxfaS1Xij5V2tQW7pQBRHQiL3xMwDBRXJABF7eS1L1pSG59iIZotIxUkKT9o0lnYXMz2h/+G9Q2NhY60QtEWp4Dr2Ivt1F/vPQNPqtwsip5x4Bhyh1U7tqkkKboX1oGd/pnNcgD7TK12X4X289F+TL8/t7wd801mMEdpGF1TJtmlDZpVkeUM8Zk6CGe5EmVhpjGMnSy4Pnmy8od4CbKWWCZ0BHMuzZKFwTI24cHrLRkxPr3OM+noRzE2cK3IP3HtHGs0xJ29e9xLmwkGar0dHgz/ZDaJuVVMjOgdYhYEm+LdwfaXnVYwRS0o+eTJaVCysV+rsD1qY8sOFtrv0JW0zWQIb4d4cTz7Q7SsACCOe8s0r0TG6HXmprAvTuQKMKxmCq0vR5DM0H43l6tAUeW+ZUnDRBhyQNMih83Bu0s8UfQDxz25m98kGEaXZe9HJeP6j18doCupViN4jzxnw45DaCJsHhLlqIm6fQ4c8e/Y48M0wcWrEbdwAHswIYfuGM6bwjTBRVcQHwrR+UoAjrTpXMzp/gmVr1hKYAGsS4agFioPI6iU76F1E2DxVCwyMpS2KNfWx0uRhq6UD93grtLGe4t8X1GzGzX0HH3PAguwq17JPnVlJVgfke4inH4oqsVY9DE+syPgxqAfqG4j7xB+aJs3NVCMpir7R3a64O4CdO8YFpwHhWvKuDOsx6lm57SanCWnLxh7tBcuQDvKNVq9ilvaIMHipdtrdD/AEhM6NptdDvVZlCkk8VOeHiQUmukp8YyFfSDYidW73NJnC/F4OS5MejUhiTfJkdUg2/PeJsWUhuIyIJHB5MoqvHwaAdsyWbZkDXTHyy7Sa1lI56Ra78wxtUrbQqgUACR3PvJa0dePrMHmp1CmmW7I5HsZHA5J+JjcYBxRLdYGjH3kJHEpWdDpHm/MgCZT7y1SYYCQyXLJLlgCPLUeThSQcMlSQ1EBLmaR4YDGSPMwjmCrkhGN4aLEGtmCi2IA+Yy0nIscgxUEVxtYAqexln5XIg3YH6foPI/aLUUq49jfMdqk1ddpyHjWZQ6sw9L8st9GEaeJavJ5JOQbSw6A9Jw+o1N/quu0czrI36tdekdU/jQWl6KOldf5guv8RGVVQAgBr5Nk/ec0c19TL9Hj3W26gv8n7TRQkP6LS1sZ+KaRmG9mDbhwB+kCc6+AjiNsGuBVkF8mLC53H7yvXs08PKdTL9BpjuE6JNQRxUTaVga3Go3XpwYMi26rssyEMCD0MRavRbDuXmNd0ryEHrBdBLcibNTqefUP6xYMJjHUptbiE6VQykEC5WpnRN8Z69C7S6fcwE6RPDl28+0XabSENftD9brAoq+ZFb8GXlqqpYDfklmQH88ZknKDhYqKd4d4foHYihCci4a9DX95bqPFjtVVXbQokd5b/RtXkqlkr/prVZ2ICGqUnpKFaUKZaDFhHFJYEYn5havFyvLkeJoniGh5YrwA5poZ4sBSM/OmLli0ZpbjyRYDQ0XJCMeWKUyQhMtRNGVIcYcsux4huLh3F9QDY/iKcef5l+DxBrIC9DwSeJGGN7gN+KdaeFF0ff4nJF478fx5WO5mB6kBfac4DV3NoWI7f40LgXljUHfKfeu3EbeIafEuDGyPeRvrT2+YjPPUyzp8aTWhuiy1X3nUJpVZA1ctx+85TRrfTkx3k1z7FRlK7ejDrCvRz/yI2uijVYyp4kcPiDLxcn5t8Fr+4gmoxe0BSk+qGyawEQfJq+aEUDKRCdJlXcC0ljfizsPCiraRsDlZX4hmU1tgy5qFQlEzDzQv8/XEX6jUFjcqyPK5RvMJdkt03IVNQNMRMcSwNBg8mHiByEh5sPBt8kHgQ4Cg82csEOSR3xC4BnmzXmwTfNh4BwDBkl+PLF4eWo8CKgZjIJJc8CDzW+LDJwMBqa7yX5wnhf5MW75NcsOJL8Z0GVTnxqlLuReo4ucnq9MUYggioyw60oQQaIljZ/PyjzCFFc0OphOofh5eNv8CPnvNDCfbj3nRv4UhJ9aAdF56yjHjwoDvcHn6V5P7S+jdedNfainwfSLuG69vv24lms1gdiRwBxU3+ftCiDav9T94tYe0TekKXVN0XM8rZ5WXlZaMtQayLKGBENw4yxmtTjERrNY8KEcyZEj0mBowf6NMJtFmi0iuSA8eF1TJHdMgLGBhpJTKgZNJJu0EqlyTJ8yLNxQlO83AzSbJNxI3J5OkqMCktJbpIPKiZgMA4hCtLVaChpMNGRUhYeYXg4aSDQI4loebDykma3QDiEh5vzILvmb4C4BmR91feU+RzKfMmjlPvAahrpBbuBwJUckG8yaLwGvGXF5tOTBt0txPXMCnOIPyZdooQTJkvmayZLlZiRMzhEtMuQMkGlGmGEyN8yZMgyxDRbcyVWZkAw//9k=">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="inside-page">
+                              <div class="inside-page__container">
+                                  <h3 class="inside-page__heading inside-page__heading--beach " >
+                                    Infectious Specialists
+                                  </h3>
+                                  <p class="inside-page__text">
+                                    Bacterial,Viral Infections,<br>seasonal Diseases.
+                                  </p>
+                                  <a class="inside-page__btn inside-page__btn--beach" (click)="getid(1007)">Appointment</a>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+      
+                  <!-- Card: Camping -->
+                  <section class="card-section">
+                      <div class="card">
+                          <div class="flip-card">
+                              <div class="flip-card__container">
+                                  <div class="card-front">
+                                      <div class="card-front__tp card-front__tp--camping">
+                                          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                          viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                     <path d="M57,52.1c0-0.4-0.1-0.7-0.3-1.1l-6.3-10.8L32.4,9l2.3-4c0.6-1,0.2-2.2-0.7-2.7c-1-0.6-2.2-0.2-2.7,0.7L30,5.2L28.7,3
+                                         c-0.6-1-1.8-1.3-2.7-0.7c-1,0.6-1.3,1.8-0.7,2.7l2.3,4l-18,31.1L3.3,51C3.1,51.3,3,51.7,3,52.1c0,0.4,0.1,0.7,0.3,1
+                                         c0.4,0.6,1,1,1.7,1h50c0.7,0,1.4-0.4,1.7-1C56.9,52.8,57,52.4,57,52.1z M34.7,49.8C34.2,50,32.1,50,30,50s-4.2,0-4.7-0.2
+                                         c-0.2-0.5-0.2-2.1-0.2-3.6l0-4.3c0-2.7,2.2-4.9,4.9-4.9s4.9,2.2,4.9,4.9l0,4.3C34.9,47.7,34.9,49.3,34.7,49.8z M13.1,42.1L28,16.5
+                                         v16.7c-3.9,0.9-6.9,4.4-6.9,8.6l0,4.3c0,1.7,0,2.9,0.2,4H8.5L13.1,42.1z M38.7,50.1c0.2-1,0.2-2.3,0.2-4l0-4.3
+                                         c0-4.2-2.9-7.7-6.9-8.6V16.5l15,25.7l4.6,7.9H38.7z"/>
+                                     </svg>
+                                                     <h2 class="card-front__heading">
+                                                        Nuerologists
+                                                     </h2>
+                                                     
+                                      </div>
+      
+                                      <div class="card-front__bt">
+                                          <p class="card-front__text-view card-front__text-view--camping">
+                                              View me
+                                          </p>
+                                      </div>
+                                  </div>
+                                  <div class="card-back">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_orv_EYBmSnfUbCmyF45ZKWIfXRP4AL60A&usqp=CAU">
+                                  </div>
+                              </div>
+                          </div>
+      
+                          <div class="inside-page">
+                              <div class="inside-page__container">
+                                  <h3 class="inside-page__heading inside-page__heading--camping">
+                                    Nuerologists
+                                  </h3>
+                                  <p class="inside-page__text">
+                                    Treat diseases of the brain and spinal cord,peripheral nerves and muscles.
+                                  </p>
+                                  <a  class="inside-page__btn inside-page__btn--camping" (click)="getid(1008)"> Appointment</a>
+                              </div>
+                          </div>
+                      </div>
+                  </section>
+    
+              </section>
+              
+                 
+              
+            </main>
+            <main class="main">
+                
+                <section class="card-area">
         
+                    <!-- Card: City -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--city">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <g>
+                                           <path d="M49.7,22c-1.1,0-2,0.9-2,2v32.2c0,1.1,0.9,2,2,2s2-0.9,2-2V24C51.7,22.9,50.8,22,49.7,22z"/>
+                                           <path d="M13,29.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3h20.8c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7
+                                               V7.1h24.8v15.3c0,1.1,0.9,2,2,2s2-0.9,2-2V5.1c0-1.1-0.9-2-2-2H3.7c-1.1,0-2,0.9-2,2v51c0,1.1,0.9,2,2,2s2-0.9,2-2V36.5H13
+                                               c1.1,0,2-0.9,2-2s-0.9-2-2-2H5.7v-3H13z"/>
+                                           <path d="M58,11.9c0-0.1,0-0.1,0-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1,0-0.1-0.1-0.2c0-0.1-0.1-0.1-0.1-0.2c0,0,0-0.1-0.1-0.1c0,0,0,0,0,0
+                                               c0-0.1-0.1-0.1-0.1-0.2c0,0-0.1-0.1-0.1-0.1c0,0-0.1-0.1-0.1-0.1c-0.1,0-0.1-0.1-0.2-0.1c0,0-0.1-0.1-0.2-0.1
+                                               c-0.1,0-0.1-0.1-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c-0.1,0-0.1,0-0.2-0.1c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c0,0,0,0,0,0
+                                               c0,0-0.1,0-0.1,0c-0.1,0-0.2,0-0.2,0c-0.1,0-0.1,0-0.2,0c-0.1,0-0.1,0-0.2,0.1c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0-0.1,0.1l-12.6,7.8
+                                               c0,0,0,0,0,0c-0.1,0-0.1,0.1-0.2,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.1c0,0-0.1,0.1-0.1,0.2c0,0.1-0.1,0.1-0.1,0.2
+                                               c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0,0,0v5.4H22.1
+                                               c-1.1,0-2,0.9-2,2v28.9c0,1.1,0.9,2,2,2s2-0.9,2-2V29.3h17.3v26.9c0,1.1,0.9,2,2,2s2-0.9,2-2V21l8.6-5.3v40.5c0,1.1,0.9,2,2,2
+                                               s2-0.9,2-2V12.1C58,12,58,12,58,11.9z"/>
+                                           <path d="M28,31L28,31c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,31,28,31z"/>
+                                           <path d="M33.5,31L33.5,31c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,31,33.5,31z"/>
+                                           <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z"/>
+                                           <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z"/>
+                                       </g>
+                                       </svg>
+        
+                                       <h2 class="card-front__heading">
+                                        Oncologists
+                                    </h2>
+                                    <!-- <p class="card-front__text-price">
+                                        From £29
+                                    </p> -->
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--city">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwuH2TAhw8fpoDb-_voV3V2u-gMK0EI7XUhQ&usqp=CAU">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--city">
+                                        Oncologists
+                                    </h3>
+                                    
+                                    
+                                    <p class="inside-page__text">
+                                        Diagnosing and Treating cancer,They will discuss  benefits and Side effects...
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--city" (click)="getid(1009)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <!-- Card: Ski -->
+                    <section class="card-section">
+                        <div class="card">
+                            <div class="flip-card">
+                                <div class="flip-card__container">
+                                    <div class="card-front">
+                                        <div class="card-front__tp card-front__tp--ski">
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve" class="card-front__icon">
+                                       <g>
+                                           <path d="M58.8,54.5L38.5,19.3c-0.4-0.6-1-1-1.7-1s-1.4,0.4-1.7,1L14.8,54.5c-0.4,0.6-0.4,1.4,0,2c0.4,0.6,1,1,1.7,1h40.6
+                                               c0.7,0,1.4-0.4,1.7-1C59.2,55.9,59.2,55.1,58.8,54.5z M36.8,24.3l5.8,10c-0.5-0.2-1.1-0.3-1.7-0.3c-2.5,0-3.7,1.5-4.6,2.5
+                                               c-0.7,0.9-1,1.1-1.5,1.1s-0.8-0.2-1.5-1.1c-0.6-0.7-1.3-1.5-2.4-2.1L36.8,24.3z M20,53.5l8.9-15.4c0.5,0,0.7,0.3,1.4,1.1
+                                               c0.8,1,2.1,2.5,4.6,2.5s3.7-1.5,4.6-2.5c0.7-0.9,1-1.1,1.5-1.1c0.5,0,0.8,0.2,1.5,1.1c0.8,1,2.1,2.5,4.5,2.5l6.8,11.8H20z"/>
+                                           <path d="M14.7,51.5c1.1,0,2-0.9,2-2s-0.9-2-2-2H6.4l9.1-15.7c0.6,0.6,1.5,1.3,2.9,1.3c1.8,0,2.8-1.2,3.3-1.8
+                                               c0.1-0.1,0.2-0.2,0.3-0.3c0.1,0.1,0.2,0.2,0.3,0.3c0.5,0.6,1.5,1.8,3.3,1.8c1.1,0,2-0.9,2-2c0-1.1-0.9-2-1.9-2
+                                               c-0.1-0.1-0.2-0.2-0.3-0.4c-0.5-0.6-1.5-1.8-3.3-1.8c-1.8,0-2.8,1.2-3.3,1.8c-0.1,0.1-0.2,0.2-0.3,0.3c-0.1-0.1-0.2-0.2-0.3-0.3
+                                               c-0.1-0.2-0.3-0.4-0.5-0.6l5.7-9.9l3.8,6.6c0.6,1,1.8,1.3,2.7,0.7c1-0.6,1.3-1.8,0.7-2.7L25,13.2c-0.4-0.6-1-1-1.7-1
+                                               s-1.4,0.4-1.7,1l-8.4,14.5c-0.1,0.1-0.2,0.3-0.3,0.4L1.2,48.5c0,0,0,0.1,0,0.1c0,0.1-0.1,0.1-0.1,0.2c0,0.1,0,0.1-0.1,0.2
+                                               c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0,0,0,0,0.1c0,0.1,0,0.1,0,0.2c0,0.1,0,0.1,0,0.2C1,50,1,50,1,50.1
+                                               c0,0.1,0,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0.1,0.1,0.1,0.1,0.2c0,0,0.1,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1
+                                               c0.1,0,0.1,0.1,0.2,0.1c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0c0.1,0.1,0.2,0.1,0.3,0.1c0,0,0.1,0,0.1,0c0.1,0,0.3,0.1,0.5,0.1c0,0,0,0,0,0
+                                               c0,0,0,0,0,0c0,0,0,0,0,0H14.7z"/>
+                                           <path d="M40.7,12.3h3.1l-2.2,2.2c-0.6,0.6-0.6,1.5,0,2.1c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4l2.2-2.2v3.1
+                                               c0,0.8,0.7,1.5,1.5,1.5s1.5-0.7,1.5-1.5v-3.1l2.2,2.2c0.3,0.3,0.7,0.4,1.1,0.4s0.8-0.1,1.1-0.4c0.6-0.6,0.6-1.5,0-2.1l-2.2-2.2h3.1
+                                               c0.8,0,1.5-0.7,1.5-1.5s-0.7-1.5-1.5-1.5h-3.1l2.2-2.2c0.6-0.6,0.6-1.5,0-2.1c-0.6-0.6-1.5-0.6-2.1,0L49,7.2V4
+                                               c0-0.8-0.7-1.5-1.5-1.5S46,3.2,46,4v3.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1,0c-0.6,0.6-0.6,1.5,0,2.1l2.2,2.2h-3.1
+                                               c-0.8,0-1.5,0.7-1.5,1.5S39.9,12.3,40.7,12.3z"/>
+                                       </g>
+                                       </svg>
+                                                       <h2 class="card-front__heading">
+                                                        Psychiatrists
+                                                       </h2>
+                                                       
+                                        </div>
+        
+                                        <div class="card-front__bt">
+                                            <p class="card-front__text-view card-front__text-view--ski">
+                                                View me
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="card-back">
+                                        <img src="data:image/jpeg;base64,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">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="inside-page">
+                                <div class="inside-page__container">
+                                    <h3 class="inside-page__heading inside-page__heading--ski">
+                                        Psychiatrists
+                                    </h3>
+                                    <p class="inside-page__text">
+                                        Mental disorders,addictive behaviors,personality disorders.
+                                    </p>
+                                    <a  class="inside-page__btn inside-page__btn--ski" (click)="getid(1010)">Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+        
+                   
+                    
+                </section>
+            </main>
+
+           
         </body>
-</html>
+        
     

@@ -17,6 +17,7 @@ import { PatientwdoctorComponent } from './patientwdoctor/patientwdoctor.compone
 import { LogoutComponent } from './logout/logout.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { PatientlistComponent } from './patientlist/patientlist.component';
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import { AboutusComponent } from './aboutus/aboutus.component';
     ProblemComponent,
     RegistrationComponent,
     NavbarComponent,
-    DoctorComponent,LoginComponent, HomeComponent, PatientwdoctorComponent, LogoutComponent, ContactusComponent, AboutusComponent
+    DoctorComponent,LoginComponent, HomeComponent, PatientwdoctorComponent, LogoutComponent, ContactusComponent, AboutusComponent, PatientlistComponent
   
    
   ],

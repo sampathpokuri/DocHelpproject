@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 import { PatserveService } from '../patserve.service';
 
 
@@ -17,8 +18,9 @@ export class LoginComponent implements OnInit {
   route: any;
   email:any;
   password:any;
+  reqdata: any;
 
-  constructor(private service: PatserveService, private router: Router) {
+  constructor(private service: PatserveService, private router: Router,private toastr:ToastrService) {
     this.loginForm = {
       email: '',
       password: ''
@@ -38,12 +40,28 @@ console.log(this.email);
 
   }
 
-  log(logForm: any) {
-    this.temp = 0;
-    console.log(logForm)
-    console.log(this.email)
-    console.log(this.allvar)
-    this.service.getcustomerbyemail(this.email).subscribe((result: any) => { this.allvar = result, console.log(this.allvar) });
+
+  async log(logForm: any) {
+    console.log('data ',logForm);
+    await this.service.getcustomerbyemail(logForm).toPromise().then((data:any) =>{this.reqdata=data; console.log(this.reqdata);});
+ if(this.reqdata!=null){
+  localStorage.setItem("object", JSON.stringify(this.reqdata));
+  this.router.navigate(['patwithdoc']);
+ }else{
+  console.log("i am error");
+  this.toastr.error("Invalid Credentials");
+ }
+ 
+ 
+ 
+   }
+
+  //log(logForm: any) {
+    // this.temp = 0;
+    // console.log(logForm)
+    // console.log(this.email)
+    // console.log(this.allvar)
+   // this.service.getcustomerbyemail(this.email).subscribe((result: any) => { this.allvar = result, console.log(this.allvar) });
     
     // for (const i in this.allvar) {
     //   // console.log(this.allvar[i].email,'  ',this.allvar[i].password)
@@ -118,6 +136,5 @@ console.log(this.email);
 
   }
 
-}
 
 

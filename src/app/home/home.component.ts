@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
 
 
-  constructor(private route:Router) {
+  constructor(private router:Router) {
     
    }
 
@@ -17,8 +17,8 @@ export class HomeComponent implements OnInit {
 
   }
   log(){
-    console.log('hi');
-this.route.navigate(['login']);
+    
+this.router.navigate(['registration']);
 
   }
   
